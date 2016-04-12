@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#fff</color>
+    <color name="gray">#d3d3d3</color>
+    <color name="black">#000</color>
+    <color name="blue">#3689ff</color>
+    <color name="dark_gray">#808080</color>
+    <color name="darker_gray">#606060</color>
+    <color name="dark_blue">#166faf</color>
+    <color name="pink">#c3d</color>
+    <color name="yellow">#d7b043</color>
+    <color name="chocum_green">#008080</color>
+    <color name="listbac0">#0fff</color>
+    <color name="chocum_green_light">#22008080</color>
+
+    <color name="onbottombtnpressed">#fff</color>
+    <color name="constest_listunit_bac">#22ffffff</color>
+    <color name="constest_listunit_bac_vice">#22008080</color>
+
+    <color name="constest_listdivider_startcolor">#66008080</color>
+    <color name="constest_listdivider_centercolor">#66808080</color>
+    <color name="constest_listdivider_endcolor">#66ffffff</color>
+</resources>

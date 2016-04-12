@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/tonguescan_actionbar_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/actionbar_logo"
+        android:scaleType="fitStart"
+        android:onClick="onActionBarItemClickListener"/>
+
+    <TextView
+        android:id="@+id/actionbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/actionbar_hint"
+        android:layout_centerInParent="true"
+        android:onClick="onActionBarItemClickListener"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/help"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="@string/help_actionbar_title"
+        android:textSize="18sp"
+        android:background="@drawable/forward_black_four_selector"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:paddingRight="15dp"
+        android:onClick="onActionBarItemClickListener"/>
+
+</RelativeLayout>

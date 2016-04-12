@@ -1,0 +1,212 @@
+<resources>
+    <string name="back">返回</string>
+    <string name="app_name">体质精灵</string>
+    <string name="bmi">体质指数</string>
+    <string name="constest">体质测试</string>
+    <string name="tonguescan">舌苔辨别</string>
+    <string name="accounts">测量结果</string>
+    <string name="yangxu">阳虚质</string>
+    <string name="yinxu">阴虚质</string>
+    <string name="qixu">气虚质</string>
+    <string name="tanshi">痰湿质</string>
+    <string name="shire">湿热质</string>
+    <string name="xueyu">血瘀质</string>
+    <string name="tebing">特禀质</string>
+    <string name="qiyu">气郁质</string>
+    <string name="pinghe">平和质</string>
+
+
+    <!--act1-->
+    <string name="actionbar_hint">关注健康</string>
+    <string name="help_actionbar_title">使用帮助</string>
+    <string name="bmi_title">体质指数测量</string>
+    <string name="bmi_vice_title">请输入您的个人信息，完成后点击确认按钮</string>
+    <string name="bmi_check_hint_1">"您没有选择性别"</string>
+    <string name="bmi_check_hint_2">"您没有填写年龄"</string>
+    <string name="bmi_check_hint_3">"您没有填写身高"</string>
+    <string name="bmi_check_hint_4">"您没有填写体重"</string>
+    <string name="bmi_info_name">姓  名</string>
+    <string name="bmi_info_name_hint">\u3000中医体质检测是国人体质调查的基本数据之一\n\u3000\u3000\u3000请配合输入真实的身份证号码和姓名</string>
+    <string name="bmi_info_gender">性  别</string>
+    <string name="bmi_info_id">身份证号</string>
+    <string name="bmi_id_hint">末尾为X的不必输入</string>
+    <string name="bmi_info_id_hint">请配合输入真实的身份证号码和姓名</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="age">年  龄</string>
+    <string name="olderthan100">年龄太大...</string>
+    <string name="height">身  高</string>
+    <string name="toohigh">太高了(≧∇≦)</string>
+    <string name="toolight">体重过轻</string>
+    <string name="weight">体  重</string>
+    <string name="tooheavy">注意单位是千克,体重过大</string>
+    <string name="bmi_btn_clear">清  空</string>
+    <string name="bmi_btn_confirm">确  认</string>
+    <string name="bmi_height_hint">以厘米(公分)为单位</string>
+    <string name="bmi_weight_hint">以公斤(kg)为单位</string>
+    <string name="tooyoung">仅适用于7岁及以上人群</string>
+    <string name="bmi_bottom_des_1">成年人体质指数BMI的范围</string>
+    <string name="bmi_bottom_des_2">过轻：低于18，适中：20~25，超重：25~28</string>
+    <string name="bmi_bottom_des_3">适中：20~25，超重：25~28</string>
+    <string name="bmi_bottom_des_4">肥胖：28~32，非常肥胖：高于32</string>
+    <string name="bmi_result_title">测量结果</string>
+    <string name="bmi_result_index">您的体质指数:</string>
+    <string name="bmi_result_andult_des_1">您体重过轻</string>
+    <string name="bmi_result_andult_des_2">您体重正常</string>
+    <string name="bmi_result_andult_des_3">您过重了</string>
+    <string name="bmi_result_andult_des_4">您有些肥胖</string>
+    <string name="bmi_result_andult_des_5">您非常肥胖</string>
+    <string name="bmi_result_cute_des_1">您的体重较轻哦 O(∩_∩)O~</string>
+    <string name="bmi_result_cute_des_2">↖(^ω^)↗ 您是正常体重呢</string>
+    <string name="bmi_result_cute_des_3">您超重喽~ (*^__^*) 嘻嘻……</string>
+    <string name="bmi_result_cute_des_4">我不是胖嘟嘟,只是肉很多 o(≧﹏≦)o</string>
+    <string name="bmi_result_cute_des_5">真的要减肥了 亲！</string>
+    <string name="bmi_result_btn_confirm">"我知道了"</string>
+
+    <string name="constest_actionbar_encyclopedia">体质百科</string>
+    <string name="constest_submit">选完了</string>
+    <string name="always">总是</string>
+    <string name="often">经常</string>
+    <string name="sometimes">有时</string>
+    <string name="seldom">很少</string>
+    <string name="never">从不</string>
+
+    <string name="constest_top_hint">请根据近一年的体验和感觉，回答以下问题(共61题)</string>
+    <string name="hint2">没有=根本不，很少=有一点，有时=有些，经常=相当，总是=非常</string>
+    <string name="constest_error_hint_1">您未回答第</string>
+    <string name="constest_error_hint_2">题</string>
+    <!--26-->
+    <string name="henshou">很瘦</string>
+    <string name="zhengchang">正常</string>
+    <string name="youdian">有点</string>
+    <string name="duide">对的</string>
+    <string name="feichang">非常</string>
+    <string name="q37_female">37.您带下色黄(白带颜色发黄)吗？</string>
+    <string name="q37_male">37.您阴囊部位潮湿吗？</string>
+    <string name="q37_child">37.小朋友，这题只有大人才要选择的，看下一题吧。</string>
+    <!--39-->
+    <string name="meiyou">没有</string>
+    <string name="youxie">有些</string>
+    <string name="bushao">不少</string>
+    <string name="henduo">很多</string>
+    <!--以下内容为逆向计分-->
+    <string name="_q60">60.您经常容易疲乏吗？</string>
+    <string name="_q61">61.您说话声音低弱无力吗？</string>
+    <string name="_q62">62.您容易闷闷不乐、情绪低沉吗？</string>
+    <string name="_q63">63.您比一般人耐受不了寒冷吗？比如冬天的寒冷，夏天的冷空调、电扇。</string>
+    <!--60-->
+    <string name="buneng">不能</string>
+    <string name="mianqiang">勉强</string>
+    <string name="keyi">可以</string>
+    <string name="bucuo">不错</string>
+    <string name="dangran">当然</string>
+    <string name="_q66">66.您容易忘事（健忘）吗？</string>
+
+    <string name="constest_results_title">体质测试结果</string>
+    <string name="constest_results_des_1">体质测试结果表明：</string>
+    <string name="constest_results_des_2">您有非常明显的偏颇体质哦</string>
+    <string name="constest_results_des_3">您有明显的偏颇体质哦</string>
+    <string name="constest_results_des_4">您的体质有点偏颇哦</string>
+    <string name="constest_results_des_5">您完全是正常体质呢</string>
+    <string name="constest_results_des_6">您的体质是：</string>
+    <string name="constest_results_des_7">倾向体质:</string>
+
+    <string name="constest_about_des0">体质</string>
+    <string name="constest_about_des1">\u3000\u3000\u2000是指人体生命过程中，在先天禀赋和后天获得的基础上所形成的形态结构、生理功能和心理状态方面综合的、相对稳定的固有特质。是人类在生长、发育过程中所形成的与自然、社会环境相适应的人体个性特征。</string>
+    <string name="constest_about_des2">中医体质9种基本类型与特征</string>
+    <string name="constest_about_zongti">1.总体特征:</string>
+    <string name="constest_about_xingti">2.形体特征:</string>
+    <string name="constest_about_biaoxian">3.常见表现:</string>
+    <string name="constest_about_xinli">4.心理特征:</string>
+    <string name="constest_about_fabing">5.发病倾向:</string>
+    <string name="constest_about_shiying">6.环境适应能力:</string>
+
+    <string name="pinghe_zongti">阴阳气血调和、体态适中、面色红润、精力充沛等</string>
+    <string name="pinghe_xingti">体形匀称健壮。</string>
+    <string name="pinghe_biaoxian">\u3000\u3000\u3000\u3000\u3000面色、肤色润泽，头发稠密有光泽，目光有神，鼻色明润，嗅觉通利，唇色红润，不易疲劳，精力充沛，耐受寒热，睡眠良好，胃纳佳，二便正常，舌色淡红，苔薄白，脉和缓有力。</string>
+    <string name="pinghe_xinli">性格随和开朗。</string>
+    <string name="pinghe_fabing">平素患病较少。</string>
+    <string name="pinghe_shiying">对自然环境和社会环境适应能力较强。</string>
+
+    <string name="qixu_zongti">元气不足、疲乏、气短、自汗等气虚表现。</string>
+    <string name="qixu_xingti">肌肉松软不实。</string>
+    <string name="qixu_biaoxian">\u3000\u3000\u3000\u3000\u3000平素语音低弱，气短懒言，容易疲乏，精神不振，易出汗，舌淡红，舌边有齿痕，脉弱。</string>
+    <string name="qixu_xinli">性格内向，不喜冒险。</string>
+    <string name="qixu_fabing">易患感冒、内脏下垂等病；病后康复缓慢。</string>
+    <string name="qixu_shiying">不耐受风、寒、暑、湿邪。</string>
+
+    <string name="yangxu_zongti">阳气不足、畏寒怕冷、手足不温等虚寒表现。</string>
+    <string name="yangxu_xingti">肌肉松软不实。</string>
+    <string name="yangxu_biaoxian">\u3000\u3000\u3000\u3000\u3000平素畏冷，手足不温，喜热饮食，精神不振，舌淡胖嫩，脉沉迟。</string>
+    <string name="yangxu_xinli">性格多沉静、内向。</string>
+    <string name="yangxu_fabing">易患痰饮、肿胀、泄泻等病；感邪易从寒化。</string>
+    <string name="yangxu_shiying">耐夏不耐冬；易感风、寒、湿邪。</string>
+
+    <string name="yinxu_zongti">阴液亏少、口燥咽干、手足心热等虚热表现。</string>
+    <string name="yinxu_xingti">体形偏瘦。</string>
+    <string name="yinxu_biaoxian">手足心热，口燥咽干，鼻微干，喜冷饮，大便干燥，舌红少津，脉细数。</string>
+    <string name="yinxu_xinli">性情急躁，外向好动，活泼。</string>
+    <string name="yinxu_fabing">易患虚劳、失精、不寐等病；感邪易从热化。</string>
+    <string name="yinxu_shiying">耐冬不耐夏；不耐受暑、热、燥邪。</string>
+
+    <string name="tanshi_zongti">痰湿凝聚、形体肥胖、腹部肥满、口黏苔腻等。</string>
+    <string name="tanshi_xingti">体形肥胖，腹部肥满松软。</string>
+    <string name="tanshi_biaoxian">\u3000\u3000\u3000\u3000\u3000面部皮肤油脂较多，多汗且黏，胸闷，痰多，口黏腻或甜，喜食肥甘甜黏，苔腻，脉滑。</string>
+    <string name="tanshi_xinli">性格偏温和、稳重，多善于忍耐。</string>
+    <string name="tanshi_fabing">易患消渴、中风、胸痹等病。</string>
+    <string name="tanshi_shiying">对梅雨季节及湿重环境适应能力差。</string>
+
+    <string name="shire_zongti">湿热内蕴、面垢油光、口苦、苔黄腻等。</string>
+    <string name="shire_xingti">形体中等或偏瘦。</string>
+    <string name="shire_biaoxian">\u3000\u3000\u3000\u3000\u3000面垢油光，易生痤疮，口苦口干，身重困倦，大便黏滞不畅或燥结，小便短黄，男性易阴囊潮湿，女性易带下增多，舌质偏红，苔黄腻，脉滑数。</string>
+    <string name="shire_xinli">容易心烦急躁。</string>
+    <string name="shire_fabing">易患疮疖、黄疸、热淋等病。</string>
+    <string name="shire_shiying">\u3000\u3000\u3000\u3000\u3000\u3000\u3000对夏末秋初湿热气候，湿重或气温偏高环境较难适应。</string>
+
+    <string name="xueyu_zongti">血行不畅、肤色晦黯、舌质紫黯等。</string>
+    <string name="xueyu_xingti">胖瘦均见。</string>
+    <string name="xueyu_biaoxian">\u3000\u3000\u3000\u3000\u3000肤色晦黯，色素沉着，容易出现瘀斑，口唇黯淡，舌黯或有瘀点，舌下络脉紫黯或增粗，脉涩。</string>
+    <string name="xueyu_xinli">易烦，健忘。</string>
+    <string name="xueyu_fabing">易患症瘕及痛证、血证等。</string>
+    <string name="xueyu_shiying">不耐受寒邪。</string>
+
+    <string name="qiyu_zongti">气机郁滞、神情抑郁、忧虑脆弱等。</string>
+    <string name="qiyu_xingti">形体瘦者为多。</string>
+    <string name="qiyu_biaoxian">神情抑郁，情感脆弱，烦闷不乐，舌淡红，苔薄白，脉弦。</string>
+    <string name="qiyu_xinli">性格内向不稳定、敏感多虑。</string>
+    <string name="qiyu_fabing">易患脏躁、梅核气、百合病及郁证等。</string>
+    <string name="qiyu_shiying">\u3000\u3000\u3000\u3000\u3000\u3000\u3000对精神刺激适应能力较差；不适应阴雨天气。</string>
+
+    <string name="tebing_zongti">\u3000\u3000\u3000\u3000\u3000先天失常，以生理缺陷、过敏反应等为主要特征。</string>
+    <string name="tebing_xingti">\u3000\u3000\u3000\u3000\u3000过敏体质者一般无特殊；先天禀赋异常者或有畸形，或有生理缺陷。</string>
+    <string name="tebing_biaoxian">\u3000\u3000\u3000\u3000\u3000过敏体质者常见哮喘、风团、咽痒、鼻塞、喷嚏等；患遗传性疾病者有垂直遗传、先天性、家族性特征；患胎传性疾病者具有母体影响胎儿个体生长发育及相关疾病特征。</string>
+    <string name="tebing_xinli">随禀质不同情况各异。</string>
+    <string name="tebing_fabing">\u3000\u3000\u3000\u3000\u3000过敏体质者易患哮喘、荨麻疹、花粉症及药物过敏等；遗传性疾病如血友病、先天愚型等；胎传性疾病如五迟（立迟、行迟、发迟、齿迟和语迟）、五软（头软、项软、手足软、肌肉软、口软）、解颅、胎惊等。</string>
+    <string name="tebing_shiying">\u3000\u3000\u3000\u3000\u3000\u3000\u3000适应能力差，如过敏体质者对易致过敏季节适应能力差，易引发宿疾。</string>
+
+    <string name="tonguescan_btn_start">开始扫描舌头</string>
+    <string name="tonguescan_actionbar_title">中医舌诊</string>
+    <string name="tonguescan_about">关于舌诊</string>
+    <string name="tonguescan_about_des1">舌诊</string>
+    <string name="tonguescan_about_des2">\u3000\u3000舌诊是观察舌头的色泽、形态的变化来辅助诊断及鉴别的一个简单有效的方法。为中医望诊的重点内容之一。舌为心之苗，脾之外候，苔由胃气所生。脏腑通过经脉与舌相联中医诊断疾病的重要客系，手少阴之别系舌本，足少阴之脉挟舌本，足厥阴之脉络舌本，足太阴之脉连舌本，散舌下，故脏腑病变，可在舌质和舌苔上反映出来，舌诊主要诊察舌质和舌苔的形态、色泽、润燥等，以此判断疾病的性质、病势的浅深、气血的盛衰、津液的盈亏及脏腑的虚实等。</string>
+    <string name="tonguescan_about_des3">诊舌的注意事项：</string>
+    <string name="tonguescan_about_des4">1.光线影响</string>
+    <string name="tonguescan_about_des5">\u3000\u3000光线的强弱与色调，对颜色的影响极大。望舌应以白天充足而柔和的自然光线为佳，如在夜间或暗处，用日光灯为好，光线要直接照射到舌面，避免面对有色的门窗。</string>
+    <string name="tonguescan_about_des6">2.饮食或药品影响</string>
+    <string name="tonguescan_about_des7">\u3000\u3000饮食及药物可使舌象发生变化，过冷过热的饮食及刺激性食物可使舌色发生改变。过食肥甘之品及服大量镇静剂，可使舌苔厚腻。</string>
+    <string name="tonguescan_about_des8">3.口腔对舌象的影响</string>
+    <string name="tonguescan_about_des9">\u3000\u3000牙齿残缺，可造成同侧舌苔偏厚，镶牙可以使舌边留有齿痕，睡觉时张口呼吸者，可以使舌苔增厚等，临床上应仔细甄别，以免误诊。</string>
+    <string name="tonguescan_about_des10">各种舌苔舌质：</string>
+    <string name="tonguescan_about_des11">1.裂纹舌：舌面见多少不等，深浅不一，形状各异的裂纹。</string>
+    <string name="tonguescan_about_des12">2.胖大舌:舌体虚浮胖大，或边有齿痕，色淡而嫩。</string>
+    <string name="tonguescan_about_des13">3.齿痕舌：舌体的边缘见牙齿的痕迹。</string>
+    <string name="tonguescan_about_des14">4.薄白苔：铺于舌面，颗粒均匀。干润适中。</string>
+    <string name="tonguescan_about_des15">5.薄白干苔：白苔薄铺舌面，津液较少而苔偏干燥。</string>
+    <string name="tonguescan_about_des16">6.白苔燥裂：舌象为苔色白，可薄可厚，颗粒粗糙而疏松，干燥且质硬，望之如砂石，扪之糙手，即为白糙苔，若颗粒较细，质地板硬，似布有纵横裂纹，</string>
+    <string name="tonguescan_about_des17">7.黄腻苔：舌象为苔色黄而粘腻，颗粒紧密胶粘，如黄色粉末调涂舌面。</string>
+    <string name="tonguescan_about_des18">8.黄燥苔：舌象为苔色黄干而少津（津液），属邪热伤津之病变。</string>
+    <string name="tonguescan_about_des19">9.灰苔：灰苔舌上苔色呈现灰中带黑者，称“舌苔灰黑”。</string>
+    <string name="tonguescan_about_des20">10.黑苔：较灰苔色深，多由灰苔或焦黄苔发展而来。</string>
+    <string name="tonguescan_about_des21">...等等等等</string>
+
+</resources>

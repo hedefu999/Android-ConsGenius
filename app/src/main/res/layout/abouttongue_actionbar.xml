@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/help_back"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="@drawable/back_black_two_selector"
+        android:text="@string/back"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:onClick="onActionBarItemClick"
+        android:paddingLeft="5dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tonguescan_about"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@id/tonguescan_actionbar_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/constest_actionbar_logo"
+        android:scaleType="fitStart"
+        android:onClick="onActionBarItemClickListener"/>
+    <Button
+        android:id="@+id/actionbar_encyclopedia"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:onClick="onActionBarItemClickListener"
+        android:background="@drawable/encyclopedia_selector"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"/>
+    <Button
+        android:id="@+id/constest_actionbar_btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="@drawable/forward_black_four_selector"
+        android:layout_centerInParent="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="@string/constest_submit"
+        android:textSize="18sp"
+        android:onClick="onActionBarItemClickListener"/>
+
+</RelativeLayout>

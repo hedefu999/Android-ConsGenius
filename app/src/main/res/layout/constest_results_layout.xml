@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/constest_results_yangxubn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/constest_results_yangxu_selector"
+            android:onClick="onTileClick"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/constest_results_yinxubn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/constest_results_yinxu_selector"
+            android:onClick="onTileClick"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/constest_results_qixubn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/constest_results_qixu_selector"
+            android:onClick="onTileClick"
+            android:paddingRight="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/constest_results_tanshibn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/constest_results_tanshi_selector"
+            android:onClick="onTileClick"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/constest_results_shirebn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/constest_results_shire_selector"
+            android:onClick="onTileClick"
+            android:paddingRight="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/constest_results_xueyubn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/constest_results_xueyu_selector"
+            android:onClick="onTileClick"
+            android:paddingRight="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/constest_results_tebingbn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/constest_results_tebing_selector"
+            android:onClick="onTileClick"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/constest_results_qiyubn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/constest_results_qiyu_selector"
+            android:onClick="onTileClick"
+            android:paddingRight="20dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/constest_results_pinghebn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/constest_results_pinghe_selector"
+            android:onClick="onTileClick"
+            android:paddingRight="20dp"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/textview_bacground_big"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/constest_results_des_1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/constest_results_des2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:text="something wrong"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/constest_results_des_6"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/constest_results_des3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="平和质"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/constest_results_des4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/constest_results_des5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</TableLayout>
+
+</ScrollView>
