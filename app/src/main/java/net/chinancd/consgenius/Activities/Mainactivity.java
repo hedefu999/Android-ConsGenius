@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Environment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,12 +24,15 @@ import net.chinancd.consgenius.Fragments.Accounts;
 import net.chinancd.consgenius.Fragments.BMI;
 import net.chinancd.consgenius.Fragments.ConsTest;
 import net.chinancd.consgenius.Fragments.TongueScan;
+import net.chinancd.consgenius.IOUtils.WebServiceUtil;
 import net.chinancd.consgenius.R;
+
+import org.ksoap2.serialization.SoapObject;
 
 import java.io.File;
 import java.util.Timer;
 
-public class Mainactivity extends Activity implements View.OnClickListener {
+public class Mainactivity extends Activity implements View.OnClickListener ,WebServiceUtil.WebServiceCallBack{
     private  final String TAG=this.getClass().getName();
     private static boolean isQuit = false;
     private long mExitTime = 0;
@@ -60,7 +64,25 @@ public class Mainactivity extends Activity implements View.OnClickListener {
         initViews();
         fragmentMananger = getFragmentManager();
         setTabSelection(1);
-
+        String[] results={"320624194903062883",
+                "2","2","2","3","2",
+                "3","2","3","2","2",
+                "1","1","2","2","1",
+                "2","2","2","2","1",
+                "2","2","3","2","1",
+                "2","2","2","3","2",
+                "2","2","1","2","2",
+                "1","1","0","2","3",
+                "2","3","3","2","3",
+                "2","2","3","3","4",
+                "3","4","3","4","3",
+                "3","2","3","2","3",
+                "2","2","3","3","2",
+                "3","2",
+                "32","18","25","25","12","39","50","46","56",
+                "您有明显的偏颇体质哦,是特禀质",};
+        WebServiceUtil.callWebservice(ConsTestResults.url,ConsTestResults.nameSpace,
+                ConsTestResults.methodName,results,this);
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -262,4 +284,17 @@ public class Mainactivity extends Activity implements View.OnClickListener {
 
     }
 
+
+    @Override
+    public void callBack(SoapObject resultObj) {
+        if (resultObj != null) {
+            Log.e(TAG, "返回结果=" + resultObj.toString());
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < resultObj.getPropertyCount(); i++) {
+                sb.append(resultObj.getProperty(i)).append("\r\n");
+            }
+            String result = sb.toString();
+            Log.e(TAG, "返回结果=" + result);
+        }
+    }
 }
