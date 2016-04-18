@@ -9,8 +9,8 @@
  结合云平台:[中国慢病网](http://www.chinancd.net)提供最精准的健康关怀
  * 内容展示
     * 软件界面:
-        * ![](http://github.com/Android-ConsGenius/ScreenShots/mainsurface.jpg)
-        * ![](http://github.com/Android-ConsGenius/raw/master/ScreenShots/constest.jpg)
-        * ![](http://github.com/Android-ConsGenius/raw/master/ScreenShots/ScanYourTongue.jpg)
+        * ![](https://github.com/hedefu999/Android-ConsGenius/blob/master/ScreenShots/mainsurface.png)
+        * ![](http://github.com/hedefu999/Android-ConsGenius/raw/master/ScreenShots/constest.png)
+        * ![](https://github.com/hedefu999/Android-ConsGenius/blob/master/ScreenShots/ScanYourTongue.png)
  * [下载链接](http://www.chinancd.net/index/download.html)
-    * ![](http://github.com/Android-ConsGenius/raw/master/app/src/main/res/drawable-hdpi/appicon.png)
+    * ![](https://github.com/hedefu999/Android-ConsGenius/blob/master/app/src/main/res/drawable-hdpi/appicon.png)
