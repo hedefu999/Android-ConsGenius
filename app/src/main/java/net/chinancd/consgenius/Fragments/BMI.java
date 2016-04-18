@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -99,7 +100,7 @@ public class BMI extends Fragment implements OnClickListener {
                name_check=false;
             }
         }
-        if (ID.equals("") || name.equals("") || ID.length() < 17 || name.length() > 4 ||
+        if (ID.equals("") || name.equals("") || ID.length() < 17 ||
                 name.length()<2|| !name_check) {
             return 0;
         } else if (gender == 0) {

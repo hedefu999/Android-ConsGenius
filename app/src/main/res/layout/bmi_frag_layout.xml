@@ -86,6 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="20dp"
                     android:inputType="text"
+                    android:maxLength="4"
                     android:singleLine="true" />
             </TableRow>
 
@@ -111,17 +112,19 @@
                     android:layout_marginRight="10dp">
                     <EditText
                         android:id="@+id/bmi_id_et"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+                        android:layout_weight="7"
                         android:inputType="number"
                         android:selectAllOnFocus="true"
                         android:hint="@string/bmi_id_hint"
-                        android:maxLength="18"/>
+                        android:maxLength="18" />
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="/X"/>
+                        android:text="/X"
+                        android:layout_weight="1" />
                 </LinearLayout>
 
             </TableRow>
@@ -189,9 +192,11 @@
                     android:layout_marginRight="20dp"
                     android:hint="@string/tooyoung"
                     android:inputType="number"
+                    android:maxLength="2"
                     android:selectAllOnFocus="true"
                     android:singleLine="true" />
             </TableRow>
+
 
             <TableRow android:layout_marginTop="10dp">
 
@@ -206,7 +211,6 @@
                     android:text="@string/height"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-
                 <EditText
                     android:id="@+id/bmi_height_et"
                     android:layout_width="fill_parent"
@@ -215,6 +219,7 @@
                     android:layout_marginRight="20dp"
                     android:hint="@string/bmi_height_hint"
                     android:inputType="number"
+                    android:maxLength="3"
                     android:selectAllOnFocus="true"
                     android:singleLine="true" />
             </TableRow>
@@ -242,6 +247,7 @@
                     android:hint="@string/bmi_weight_hint"
                     android:inputType="numberDecimal"
                     android:selectAllOnFocus="true"
+                    android:maxLength="4"
                     android:singleLine="true" />
             </TableRow>
 

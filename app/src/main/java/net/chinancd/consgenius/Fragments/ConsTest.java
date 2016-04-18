@@ -1,12 +1,14 @@
 package net.chinancd.consgenius.Fragments;
 
 import android.app.Fragment;
+import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import net.chinancd.consgenius.GlobalData;
 import net.chinancd.consgenius.ListViewUtils.ListUnit;
@@ -40,10 +42,14 @@ public class ConsTest extends Fragment {
         //原因是actionbar的所有控件归activity管，即便fragment能获得actionbar的控件，但不能实时使用
         //改进方法是在activity设置按钮监听，调用act2（fragment）的方法
         mListView = (ListView) act2view.findViewById(R.id.listview);
-        questionlist = getList();
-        final MyBaseAdapter adapter = new MyBaseAdapter(this.getActivity(), questionlist);
-        mListView.setAdapter(adapter);
-
+        if(data.isBmifirst()){
+            questionlist = getList();
+            final MyBaseAdapter adapter = new MyBaseAdapter(this.getActivity(), questionlist);
+            mListView.setAdapter(adapter);
+        }else {
+            Toast.makeText(getActivity(),
+                    getString(R.string.constest_bmi_check_notification), Toast.LENGTH_SHORT).show();
+        }
         return act2view;
     }
 

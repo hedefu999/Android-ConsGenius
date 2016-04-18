@@ -24,16 +24,21 @@ import net.chinancd.consgenius.Fragments.Accounts;
 import net.chinancd.consgenius.Fragments.BMI;
 import net.chinancd.consgenius.Fragments.ConsTest;
 import net.chinancd.consgenius.Fragments.TongueScan;
+import net.chinancd.consgenius.GlobalData;
 import net.chinancd.consgenius.IOUtils.WebServiceUtil;
 import net.chinancd.consgenius.R;
 
 import org.ksoap2.serialization.SoapObject;
 
 import java.io.File;
-import java.util.Timer;
+import java.util.HashMap;
 
 public class Mainactivity extends Activity implements View.OnClickListener ,WebServiceUtil.WebServiceCallBack{
     private  final String TAG=this.getClass().getName();
+    GlobalData data;
+    private static final int CAMERA_SCAN=1;
+    public static File tongueFolder;
+    public static File uploadFolder;
     private static boolean isQuit = false;
     private long mExitTime = 0;
 
@@ -61,28 +66,11 @@ public class Mainactivity extends Activity implements View.OnClickListener ,WebS
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         setContentView(R.layout.mainactivity);
         fileManager();
+        data = (GlobalData)getApplication();
         initViews();
         fragmentMananger = getFragmentManager();
         setTabSelection(1);
-        String[] results={"320624194903062883",
-                "2","2","2","3","2",
-                "3","2","3","2","2",
-                "1","1","2","2","1",
-                "2","2","2","2","1",
-                "2","2","3","2","1",
-                "2","2","2","3","2",
-                "2","2","1","2","2",
-                "1","1","0","2","3",
-                "2","3","3","2","3",
-                "2","2","3","3","4",
-                "3","4","3","4","3",
-                "3","2","3","2","3",
-                "2","2","3","3","2",
-                "3","2",
-                "32","18","25","25","12","39","50","46","56",
-                "您有明显的偏颇体质哦,是特禀质",};
-        WebServiceUtil.callWebservice(ConsTestResults.url,ConsTestResults.nameSpace,
-                ConsTestResults.methodName,results,this);
+
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {
@@ -102,9 +90,9 @@ public class Mainactivity extends Activity implements View.OnClickListener ,WebS
 
     private void fileManager() {
         if (Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
-            File mainFolder = new File(Environment.getExternalStorageDirectory(), "ConstitutionsGenius");
-            if (!mainFolder.exists()) {
-                if (!mainFolder.mkdir()) {
+            tongueFolder = new File(Environment.getExternalStorageDirectory(), "chocum/tongueScan");
+            if (!tongueFolder.exists()) {
+                if (!tongueFolder.mkdir()) {
                     Toast.makeText(this, "creating folder failed", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -177,6 +165,7 @@ public class Mainactivity extends Activity implements View.OnClickListener ,WebS
                     consTestFrag = new ConsTest();
                     transaction.add(R.id.content, consTestFrag);
                 } else {
+                    transaction.add(R.id.content, consTestFrag);
                     transaction.show(consTestFrag);
                 }
                 setActionBarLayout(R.layout.constest_actionbar_layout);
@@ -203,6 +192,10 @@ public class Mainactivity extends Activity implements View.OnClickListener ,WebS
                 }
                 setActionBarLayout(R.layout.accounts_actionbar_layout);
                 break;
+            case 5:
+                Intent cameraIntent=new Intent(this,CameraActivity.class);
+                startActivityForResult(cameraIntent,CAMERA_SCAN);
+                break;
             default://此处没有default运行出错！
                 Toast.makeText(this, "nothing,just for fun", Toast.LENGTH_SHORT).show();
                 break;
@@ -227,7 +220,14 @@ public class Mainactivity extends Activity implements View.OnClickListener ,WebS
             transaction.hide(bmiFrag);
         }
         if (consTestFrag != null) {
-            transaction.hide(consTestFrag);
+            //data内存储了bmi是否已经计算,间接说明用户是否填写了完整信息
+            if(data.isBmifirst()){
+                //使用remove会使得fragment每次都要初始化界面,用户所做的更改会丢失,所以用hide
+                transaction.hide(consTestFrag);
+            }else {
+                //如果用户没有先计算bmi,则每次都要初始化界面,以便等待用户确实填入个人信息并计算了bmi
+                transaction.remove(consTestFrag);
+            }
         }
         if (tongueScanFrag != null) {
             transaction.hide(tongueScanFrag);
@@ -295,6 +295,20 @@ public class Mainactivity extends Activity implements View.OnClickListener ,WebS
             }
             String result = sb.toString();
             Log.e(TAG, "返回结果=" + result);
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode){
+            case CAMERA_SCAN:
+                //data.getStringExtra("tongue_type");
+                //TongueScan.scanbutton.setText("薄白苔");
+                Toast.makeText(this, "薄白苔", Toast.LENGTH_SHORT).show();
+                setTabSelection(3);
+                break;
+            default:
+                break;
         }
     }
 }

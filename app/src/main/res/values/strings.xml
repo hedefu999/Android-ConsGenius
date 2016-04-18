@@ -4,7 +4,7 @@
     <string name="bmi">体质指数</string>
     <string name="constest">体质测试</string>
     <string name="tonguescan">舌苔辨别</string>
-    <string name="accounts">测量结果</string>
+    <string name="accounts">我的信息</string>
     <string name="yangxu">阳虚质</string>
     <string name="yinxu">阴虚质</string>
     <string name="qixu">气虚质</string>
@@ -63,6 +63,7 @@
     <string name="bmi_result_cute_des_5">真的要减肥了 亲！</string>
     <string name="bmi_result_btn_confirm">"我知道了"</string>
 
+    <string name="constest_bmi_check_notification">您需要先进行体质指数的测量再测试体质</string>
     <string name="constest_actionbar_encyclopedia">体质百科</string>
     <string name="constest_submit">选完了</string>
     <string name="always">总是</string>

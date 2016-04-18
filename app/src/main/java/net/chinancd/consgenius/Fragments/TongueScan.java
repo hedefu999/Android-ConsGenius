@@ -20,11 +20,9 @@ import java.io.File;
  * email:hedefu999@gmail.com
  */
 public class TongueScan extends Fragment {
-
-    private Button scanbutton;
+    public static Button scanbutton;
     private ImageView imageView;
 
-    //private String timeStamp;
     @Override
     public void onCreate(Bundle savedInstanceState) {
 
@@ -32,41 +30,17 @@ public class TongueScan extends Fragment {
     }
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View act3view = inflater.inflate(R.layout.tonguescan_frag_layout, null);
-        scanbutton = (Button) act3view.findViewById(R.id.tonguescan_frag_btn);
-        imageView = (ImageView) act3view.findViewById(R.id.tonguescan_frag_cartoon_iv);
-        //timeStamp=new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        File imagesFolder = new File(Environment.getExternalStorageDirectory(), "/ConstitutionsGenius/tongue");
+        View tongueScanView = inflater.inflate(R.layout.tonguescan_frag_layout, null);
+        scanbutton = (Button) tongueScanView.findViewById(R.id.tonguescan_frag_btn);
+        imageView = (ImageView) tongueScanView.findViewById(R.id.tonguescan_frag_cartoon_iv);
+        File imagesFolder = new File(Environment.getExternalStorageDirectory(), "chocum/tongueScan");
         if (!imagesFolder.exists()) {
             if (!imagesFolder.mkdir()) {
                 Toast.makeText(getActivity(), "creating folder failed", Toast.LENGTH_SHORT).show();
             }
         }
-         /*scanbutton.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-
-                 startActivity(new Intent(getActivity(),CameraActivity.class));
-
-                *//* Intent cameraintent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                 File image=new File(imagesFolder,"tongue.jpg");
-                 Uri uriSavedImage=Uri.fromFile(image);
-                 cameraintent.putExtra(MediaStore.EXTRA_OUTPUT,uriSavedImage);
-                 startActivityForResult(cameraintent, codecamera);*//*
-             }
-         });*/
-        return act3view;
+        return tongueScanView;
     }
 
-    /*public void savebitmap(String bitName) throws IOException{
-        File file=new File("/sdcard/ConstitutionsGenius/"+bitName+".png");
-        file.createNewFile();
-        try {
-            FileOutputStream fileOutputStream=new FileOutputStream(file);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            System.out.print("file write failed");
-        }
 
-    }*/
 }

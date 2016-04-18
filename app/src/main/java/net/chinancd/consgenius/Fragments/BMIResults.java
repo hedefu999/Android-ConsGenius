@@ -34,6 +34,7 @@ public class BMIResults extends DialogFragment {
 
     public void onCreate(Bundle savedInstanceState) {
         data=(GlobalData)(getActivity().getApplication());
+        data.setBmifirst(true);
         setCancelable(false);
         setStyle(DialogFragment.STYLE_NO_TITLE, 0);
 

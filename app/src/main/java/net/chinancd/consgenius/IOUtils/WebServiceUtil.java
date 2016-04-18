@@ -15,7 +15,10 @@ import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Vector;
 
 /**
@@ -37,57 +40,25 @@ public class WebServiceUtil {
      * @param methodName         页面提供
      * @param webServiceCallBack 回调,要比开启新线程更为合适,便于更新界面
      */
-    public static void callWebservice(String url, String nameSpace, String methodName, String[] s,
-                                      final WebServiceCallBack webServiceCallBack) {
+    public static void callWebservice(
+            String url, String nameSpace, String methodName,
+            HashMap<String,String> params, final WebServiceCallBack webServiceCallBack) {
         final String soapAction = nameSpace + methodName;
 
         SoapObject transSoap=new SoapObject(nameSpace,methodName);
-
-        //4.使用ArrayList...Http 400
-        List<String> transList=new ArrayList<String>();
-        for(int i=0;i<s.length;i++){
-            transList.add(s[i]);
+        if (params != null) {
+            for(Iterator<Map.Entry<String,String>> iterator=params.entrySet().iterator();
+                iterator.hasNext();){
+                Map.Entry<String,String> entry=iterator.next();
+                transSoap.addProperty(entry.getKey(),entry.getValue());
+            }
+        }else {
+            Log.d(TAG, "参数为空");
         }
-        SoapObject subSoap=new SoapObject(nameSpace,"s");
-        for(String str:transList){
-            subSoap.addProperty("",str);
-        }
-        transSoap.addSoapObject(subSoap);
-
-        //2.使用自定义序列化对象,返回http 400
-        /*TransObjSerial strarray=new TransObjSerial();
-        strarray.setStrArray(s);
-        PropertyInfo propertyInfo=new PropertyInfo();
-        propertyInfo.setName("s");
-        propertyInfo.setValue(strarray);
-        propertyInfo.setType(strarray.getClass());
-        propertyInfo.setNamespace(nameSpace);
-        transSoap.addProperty(propertyInfo);*/
-
-        /*//1.数组直传,服务端认为数据错误返回http 400
-        SoapObject subObject=new SoapObject(nameSpace,"s");
-        for(int i=0;i<s.length;i++){
-            subObject.addProperty(""+i,s[i]);
-        }
-        soapObject.addSoapObject(subObject);*/
-
-
-        //3......
-        /*SoapObject soapObject = new SoapObject(nameSpace, methodName);
-        PropertyInfo propertyInfo = new PropertyInfo();
-        for (int i = 0; i < s.length; i++) {
-            propertyInfo.setNamespace(ConsTestResults.nameSpace);
-            propertyInfo.setName("String");
-            propertyInfo.setValue(s[i]);
-        }
-        soapObject.addProperty("s", propertyInfo);*/
 
         final SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
         envelope.dotNet = true;
         envelope.setOutputSoapObject(transSoap);//等于envelope.bodyOut=soapObject;
-        //envelope.setOutputSoapObject(transSoap);
-        //envelope.addMapping(nameSpace,"TransObjSerial",TransObjSerial.class);
-
         final HttpTransportSE httpTransSE = new HttpTransportSE(url);
         httpTransSE.debug = true;
 

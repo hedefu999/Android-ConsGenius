@@ -9,13 +9,23 @@ import android.app.Application;
  */
 public class GlobalData extends Application {
 
-    private String ID;
+    private String ID="521521521521521521";
     private String name;
     private int gender = 0;//默认为0，未设定性别,1为成年女，2为成年男，3为小孩。
     private int age;
     private int height;
     private float weight;
     private int[] testans;
+
+    public boolean isBmifirst() {
+        return bmifirst;
+    }
+
+    public void setBmifirst(boolean bmifirst) {
+        this.bmifirst = bmifirst;
+    }
+
+    private boolean bmifirst=false;//核查用户是否先计算BMI后再进入constest
 
     public void onCreate() {
         testans = new int[61];

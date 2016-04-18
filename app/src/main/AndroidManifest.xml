@@ -47,7 +47,8 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".Activities.CameraActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:theme="@style/FullScreen"/>
     </application>
 
 </manifest>
