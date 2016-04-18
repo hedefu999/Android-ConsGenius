@@ -9,7 +9,7 @@
  结合云平台:[中国慢病网](http://www.chinancd.net)提供最精准的健康关怀
  * 内容展示
     * 软件界面:
-        * ![](http://github.com/Android-ConsGenius/raw/master/ScreenShots/mainsurface.jpg)
+        * ![](http://github.com/Android-ConsGenius/ScreenShots/mainsurface.jpg)
         * ![](http://github.com/Android-ConsGenius/raw/master/ScreenShots/constest.jpg)
         * ![](http://github.com/Android-ConsGenius/raw/master/ScreenShots/ScanYourTongue.jpg)
  * [下载链接](http://www.chinancd.net/index/download.html)
