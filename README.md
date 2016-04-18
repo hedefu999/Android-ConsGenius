@@ -10,7 +10,7 @@
  * 内容展示
     * 软件界面:
         * ![](https://github.com/hedefu999/Android-ConsGenius/blob/master/ScreenShots/mainsurface.png)
-        * ![](http://github.com/hedefu999/Android-ConsGenius/raw/master/ScreenShots/constest.png)
+        * ![](http://github.com/hedefu999/Android-ConsGenius/blob/master/ScreenShots/constest.png)
         * ![](https://github.com/hedefu999/Android-ConsGenius/blob/master/ScreenShots/ScanYourTongue.png)
  * [下载链接](http://www.chinancd.net/index/download.html)
     * ![](https://github.com/hedefu999/Android-ConsGenius/blob/master/app/src/main/res/drawable-hdpi/appicon.png)
